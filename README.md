@@ -2,10 +2,10 @@
 
 ## Overview
 
-A desktop application that translates Chinese text in CAD drawings (PDF) into English. A CustomTkinter GUI talks to a local FastAPI backend (run in a background thread), which extracts Chinese text from the PDF (PyMuPDF + pdfplumber), translates it offline using a bundled MarianMT (Helsinki-NLP) model, and overlays the English text back onto the original PDF — abbreviating and generating a legend page where space doesn't allow the full translation to fit. Jobs run as background tasks and are polled for status; results are returned as a downloadable ZIP.
+A desktop application that translates Chinese text in CAD drawings (PDF) into English. A CustomTkinter GUI talks to a local FastAPI backend (run in a background thread), which extracts Chinese text from the PDF (PyMuPDF + pdfplumber), translates it offline using a bundled MarianMT (Helsinki-NLP) model, and overlays the English text back onto the original PDF abbreviating and generating a legend page where space doesn't allow the full translation to fit. Jobs run as background tasks and are polled for status; results are returned as a downloadable ZIP.
 
 ## Architecture Diagram
-check this link for flow diagram 
+check this link for flow diagram:
 https://github.com/prerna-phadnis/translation-flow-diagram/blob/main/diagrams.excalidraw.svg
 
 ## Environment Variables
